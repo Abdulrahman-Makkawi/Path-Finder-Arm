@@ -1,6 +1,6 @@
 3-DOF Robot Arm Path Tracker:
 
-    This MATLAB project simulates and visualizes a 3-Degree-of-Freedom (3-DOF) robot arm. It allows users to set multiple target goals in a 2D environment and attempts to reach each goal sequentially while avoiding predefined circular obstacles. The arm's movement is controlled using a basic gradient descent-like approach on its joint angles, coupled with collision detection.
+This MATLAB project simulates and visualizes a 3-Degree-of-Freedom (3-DOF) robot arm. It allows users to set multiple target goals in a 2D environment and attempts to reach each goal sequentially while avoiding predefined circular obstacles. The arm's movement is controlled using a basic gradient descent-like approach on its joint angles, coupled with collision detection.
 
 Features:
 
@@ -20,11 +20,11 @@ Features:
 
 Getting Started
 
-    These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 Prerequisites
 
-    You need MATLAB installed on your system to run this project.
+You need MATLAB installed on your system to run this project.
 
 Installation
 
@@ -38,7 +38,7 @@ How to Run
 
     -Run the main function: In the MATLAB Command Window, type: "robotArm3DOF_MultiGoalPath" and press Enter.
 
-    -Set Goals: A figure window will appear. Click anywhere within the axes to set desired target goals for the robot arm. You'll see red 'x' markers appear at         each goal location.
+    -Set Goals: A figure window will appear. Click anywhere within the axes to set desired target goals for the robot arm. You'll see red 'x' markers appear at each goal location.
 
     -Adjust Parameters (Optional): Modify the values for L1, L2, L3, Threshold, Obstacles, Alpha, and Epochs in the UI panel on the left if you wish.
 
@@ -50,11 +50,11 @@ How to Run
 
 How it Works
 
-    The project uses a simple iterative approach to move the robot arm:
+The project uses a simple iterative approach to move the robot arm:
 
     Forward Kinematics: Calculates the end-effector position (x, y) and the positions of all joints based on the current joint angles (theta).
 
-    Goal Seeking: In each epoch, the arm attempts to adjust its joint angles (theta) slightly. If the new configuration moves the end-effector closer to the goal       and does not result in a collision, the new angles are adopted.
+    Goal Seeking: In each epoch, the arm attempts to adjust its joint angles (theta) slightly. If the new configuration moves the end-effector closer to the goal and does not result in a collision, the new angles are adopted.
 
     Collision Detection: Before accepting new joint angles, the checkCollision function verifies if any segment of the arm intersects with any circular obstacle.
 
@@ -74,16 +74,16 @@ You can easily customize various aspects of the simulation:
 
     Epochs: The maximum number of iterations the arm will attempt to reach a single goal.
 
-    Obstacles: Modify the Obstacles input in the UI or directly in the code to add, remove, or change the position and size of circular obstacles. Each obstacle       is defined by its [x_center, y_center, radius].
+    Obstacles: Modify the Obstacles input in the UI or directly in the code to add, remove, or change the position and size of circular obstacles. Each obstacle is defined by its [x_center, y_center, radius].
 
 Contributing
 
-    Feel free to fork this repository and contribute! Whether it's improving the movement algorithm, adding different types of obstacles, or enhancing the UI, all     contributions are welcome.
+Feel free to fork this repository and contribute! Whether it's improving the movement algorithm, adding different types of obstacles, or enhancing the UI, all contributions are welcome.
 
 License
 
-    This project is open-source and available under the MIT License.
+This project is open-source and available under the MIT License.
 
 Contact
 
-    If you have any questions or suggestions, feel free to reach out!
+If you have any questions or suggestions, feel free to reach out!
